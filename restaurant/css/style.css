@@ -16,16 +16,12 @@ padding-left: 0px;
 }
 
 .nav{
-    padding-right:15px
-}
-
-@media (min-width: 1110px){
-.nav {padding-right:200px;}
-.logo-b{padding-left:80px;}
+    padding-right:14px;
+    margin: 0px;
 }
 
 .navbar-default .navbar-nav > li > .underline {
-    padding-top: 18px;
+    padding: 18px 20px 15px 0px;
     font-weight:bold;
     text-align: center;
     color: #914726;
@@ -68,8 +64,9 @@ padding-left: 0px;
 
 .banner{
     color:white;
-    background-image:url(../img/main.jpg);
     background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .semiopacity{
@@ -205,13 +202,6 @@ h3{
     float: right;
 }
 
-      @media (max-width:992px){
-  .about-col-left{padding-left: 15px;}
-  .about-col-right{padding-right: 0px;}
-  .service-title{padding-left: 0px;}
-  .service-description{padding-left: 0px;}
-  .service-img {padding-right: 15px; float: none;}
-}
 
 .row-menu{
     background-color:#f4f4f4;
@@ -229,9 +219,7 @@ h3{
     padding-right: 15px;
 }
 
-@media (max-width:767px){
-    .menu-col{padding-left:15px;}
-}
+
 
 .menu-row-margin{
     margin-right: 0px;
@@ -307,8 +295,9 @@ ul{
 }
 
 .testimonials{
-    background-image:url(../img/testimonials.jpg);
     background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     min-height: 450px;
 }
 
@@ -354,15 +343,12 @@ ul{
     margin-left: inherit;
 }
 
-     @media (max-width:992px){
-  .testimonials-content{font-size: 18px;}
-  .testimonials-content{margin:0px;}
-  .menu-dish-price{margin-left:5px;}
-  .invisible-md-4{display: none;}
-}
+
 
 .reservation{
-    background-image:url(../img/reservation.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .reservation-semiopacity{
@@ -411,18 +397,6 @@ ul{
     text-decoration:none;
 }
 
-     @media (max-width:1200px){
-  .form-padding{
-    padding-right:200px;
-    padding-left:200px;}
-}
-
-     @media (max-width:768px){
-  .form-padding{
-    padding-right:0px;
-    padding-left:0px;}
-}
-
 .footer-title{
     text-align: center;
     color: #914726;
@@ -456,3 +430,33 @@ ul{
     margin-top: 10px;
 }
 
+
+     @media (max-width:1200px){
+    .form-padding{
+    padding-right:200px;
+    padding-left:200px;}
+}
+
+    @media (min-width: 1110px){
+    .nav {padding-right:200px;}
+    .logo-b{padding-left:80px;}
+}
+
+    @media (max-width:991px){
+    .about-col-left{padding-left: 15px;}
+    .about-col-right{padding-right: 0px;}
+    .service-title{padding-left: 0px;}
+    .service-description{padding-left: 0px;}
+    .service-img {padding-right: 15px; float: none;}
+    .testimonials-content{font-size: 18px;}
+    .testimonials-content{margin:0px;}
+    .menu-dish-price{margin-left:5px;}
+    .invisible-md-4{display: none;}
+}
+
+    @media (max-width:768px){
+    .form-padding{
+    padding-right:0px;
+    padding-left:0px;}
+    .menu-col{padding-left:15px;}
+}
