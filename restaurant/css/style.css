@@ -402,6 +402,11 @@ ul {
     text-decoration: none;
 }
 
+button[type="submit"]:focus {
+    outline: none;
+}
+
+
 .footer-text {
     text-align: center;
     color: #914726;
