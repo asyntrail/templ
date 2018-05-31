@@ -1,0 +1,10 @@
+Изменить директорию git
+
+pwd: to check where you are (If necessary)
+cd: change directory
+In your case if I understand you, you need:
+cd c/project
+
+изменить файл .bash_profile
+HOME="D:/Drive/Project/"
+source ~/git-completion.bash

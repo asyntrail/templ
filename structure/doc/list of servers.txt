@@ -1,0 +1,9 @@
+https://getforge.com/ жми зеленую кнопку Sign Up for free, вводи имя, почту, пароль, подтверждай мыло. Покуешь свои страницы в .zip архив. Заходишь на этот сайт где Your first Forge site вводишь желаемое имя сайта, переносишь .zip архив в окно браузера. Готово твойсайт.getforce.com
+Еще бесплатные сервисы:
+https://figroll.io
+https://www.netlify.com
+https://bitballoon.com
+https://surge.sh
+https://pages.github.com
+https://pages.gitlab.io
+http://pages.bitbucket.org

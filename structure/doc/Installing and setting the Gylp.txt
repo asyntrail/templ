@@ -1,0 +1,77 @@
+Сначала установить https://nodejs.org/uk/
+
+Потом в терминале глобально установить при помщи команды
+npm install --global gulp-cli
+
+Затем в  корне папки с проектом создать файл package.json 
+с следующим наполненением
+{
+    "name":"gulp-project",
+    "version":"0.1.0",
+    "devDependencies" :{
+        */Сюда будут подключатся плагины*/
+    }
+}
+
+Устанавливаем Gulp в свою рабочую директорию 
+Выбрать адрес в терминале и запусить команду
+
+npm install --save-dev gulp
+
+Гулп устанавливается и делает запись в package.json 
+Затем выбираю нужный мне плагин вставляю коду в ссекцию для плагинов
+устанавливаю плагин (он должен появится в node-modules) и запись в evDependencies
+
+Теперь нужно создать gulpfile.js и поместить в него следующий код
+var gulp = require('gulp');
+
+gulp.task('default', function() {
+  // place code for your default task here
+}); */Это вызов самого Gulp*/
+
+
+Про установку и настройку плагинов (которые соединяют два стиля в один, и изменяют имя) https://www.youtube.com/watch?v=9zwwmjGz1Vs
+
+gulp.task('watch' , function() {
+gulp.watch('css/*.css' , ['default'])
+})  
+Плагин для отслежывания измениий в указаных папках и автоматический запуск Gulp в task default
+
+
+И так устанавливаем плагин Gulp gulp-autoprefixer 
+На оф сайте http://gulpjs.com/plugins/ забиваем в поиск
+переменная autoprefixer = require('gulp-autoprefixer');
+
+В общем виде
+var gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+
+
+gulp.task('default', function() {
+  // place code for your default task here
+});
+
+gulp.task('default', () =>
+    gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'))
+);
+
+
+gulp.task('watch' , function() {
+gulp.watch('css/*.css' , ['default'])
+})
+
+В командной строке gulp watch запустить gulp
+cntrl+c остановить 
+
+
+
+
+
+
+
+

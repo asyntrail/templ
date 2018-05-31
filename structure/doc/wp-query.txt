@@ -1,0 +1,26 @@
+WP_Query цикл, в тело цикла вставляется html код 
+<?php
+ 
+$args = array(
+    'category_name' => 'news',
+    'posts_per_page' => 3
+);
+ 
+$my_query = new WP_Query( $args );
+ 
+if ( $my_query->have_posts() ) {
+ 
+    while ( $my_query->have_posts() ) {
+ 
+        $my_query->the_post();
+ 
+        // Post data goes here.
+ 
+    }
+ 
+}
+ 
+// Reset the `$post` data to the current post in main query.
+wp_reset_postdata();
+ 
+?>
